@@ -29,7 +29,7 @@ Requirements:
 
 Linux:
 ```bash
-git clone https://github.com/ostris/ai-toolkit.git
+git clone https://github.com/Hugo-SEQUIER/ai-toolkit.git
 cd ai-toolkit
 git submodule update --init --recursive
 python3 -m venv venv
@@ -38,7 +38,14 @@ source venv/bin/activate
 # install torch first
 pip3 install torch
 pip3 install -r requirements.txt
+pip3 uninstall diffusers
+pip3 install diffusers
+
+nano config/examples/train_lora_flux_24gb.yaml
+python3 run.py config/examples/train_lora_flux_24gb.yaml
 ```
+
+
 
 Windows:
 ```bash
