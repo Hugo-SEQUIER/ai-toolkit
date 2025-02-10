@@ -1,1 +1,1 @@
-Basic sprite character model with standard features: pointed ears, large eyes, simple nose design
+The Sprite
